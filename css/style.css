@@ -1,0 +1,132 @@
+
+body{
+    margin: 10px;
+}
+h1{
+    text-transform: capitalize;
+}
+.logo {
+     font-size: 1.2rem;
+    border-bottom: 1px solid #222;
+    text-transform: uppercase;
+    
+}
+
+main {
+ 
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #222;
+ 
+ 
+}
+.content-container , .image-container {
+    width: 50%;
+    margin: 10px auto ;
+}
+ 
+main img {
+    width: 80%;
+    height: 80%;
+ 
+}
+
+.content-container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.content{
+    width: 80%;
+} 
+h3 {
+font-weight: bolder;
+    color: rgb(167, 164, 164);
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+  a {
+    border: 2px solid #222;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+text-decoration: none;
+font-weight: bold;
+color: #222;
+}
+
+a:hover {
+    background-color: #222;
+    color: #fff;
+}
+section h1 {
+    text-align: center;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+
+}
+.skills div {
+    border: 1px solid #222;
+    margin: 4px;
+    padding: 10px;
+    width: 30%;
+    max-height: 30%;
+    /* Smooth transitions for hover effects */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    /* Fade-in animation on load */
+    animation: fadeInUp 0.5s ease both;
+}
+
+.skills div:hover {
+    background-color: #222;
+    color: #fff;
+     
+    transform: scale(1.05);
+     
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+ 
+.fun-things {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+ main{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+        .content-container, .image-container {
+            width: 100%;
+ }
+ main img {
+    width: 100%;
+    height: 100%;
+ 
+}
+.content{
+    font-size: 0.8rem;
+}
+}
